@@ -1,4 +1,12 @@
-# python script to access fluxdb
+# fluxdb
+
+Simple Test enviroment to test a basic workflow of Influxdb 
+
+* Autosetup Influxdb via Docker
+
+* Python script to write simple data
+
+* Python script to read simple data
 
 ## Install fluxdb example and setup python 
 ```
