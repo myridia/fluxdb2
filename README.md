@@ -35,12 +35,12 @@ The command will run a docker compose file.
 docker-compose up -d
 ```
 
-## Test import/write data with
+### Test import/write data with
 ```
  python enter.py
 ```
 
-## After test read the data with
+### Test read the data with
 ```
  python get.py
 ```
