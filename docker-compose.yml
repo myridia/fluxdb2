@@ -1,0 +1,19 @@
+version: '3'
+services:
+  influxdb:
+    image: influxdb:latest
+    container_name: myridia_influxdb
+    ports:
+        - "8086:8086" 
+    volumes:
+      - influx_db:/var/lib/influxdb2
+    environment:
+     - DOCKER_INFLUXDB_INIT_MODE=setup 
+     - DOCKER_INFLUXDB_INIT_USERNAME=admin
+     - DOCKER_INFLUXDB_INIT_PASSWORD=passpass
+     - DOCKER_INFLUXDB_INIT_ORG=test
+     - DOCKER_INFLUXDB_INIT_BUCKET=rate
+     - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=Rym025SJu7c10FVdf05TBbg5XIf6s0NdSY05f8C4sjqCD8VBmsvsjTEaNbE6rLB8MqCdxldyFRsF4ePYGi-ZzA==
+volumes:
+  influx_db: 
+
